@@ -1,0 +1,11 @@
+---
+#install git package 
+ - hosts: localhost
+   become: yes
+   become_user: root
+   tasks:
+   - name: install package git 
+     yum: 
+      name: git 
+      state: latest
+...
