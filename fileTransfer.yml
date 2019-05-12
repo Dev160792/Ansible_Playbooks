@@ -1,0 +1,12 @@
+---
+#This is file transfer"
+ - hosts: appserver
+   become: yes
+   become_user: root
+   tasks:
+   - name: file transer
+     copy: 
+      src: /home/ec2-user/devender_ansible/test.txt
+      dest: /home/ec2-user/devender/test.txt
+... 
+ 
